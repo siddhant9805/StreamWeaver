@@ -1,0 +1,514 @@
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.pipelines-page {
+  min-height: 100vh;
+  padding: 30px;
+  background: #f5f7fb;
+  box-sizing: border-box;
+  color: #1f2937;
+}
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.pipeline-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.pipeline-page-header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.pipeline-page-header p {
+  margin: 7px 0 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+.success-message {
+  background: #ecfdf5;
+  border: 1px solid #10b981;
+  color: #047857;
+  padding: 13px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.error-message {
+  background: #fef2f2;
+  border: 1px solid #ef4444;
+  color: #b91c1c;
+  padding: 13px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.pipeline-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 22px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #111827;
+}
+
+.section-title p {
+  margin: 5px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.section-number {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.form-field label span {
+  color: #ef4444;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  color: #374151;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-field input:disabled {
+  background: #f3f4f6;
+  cursor: not-allowed;
+}
+
+.helper-text {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* =========================================
+   PIPELINE FLOW
+========================================= */
+
+.pipeline-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0 25px;
+}
+
+.flow-node {
+  flex: 1;
+  max-width: 300px;
+  min-height: 120px;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.flow-node span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.flow-node h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.flow-node p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.flow-icon {
+  font-size: 35px;
+  flex-shrink: 0;
+}
+
+.flow-arrow {
+  font-size: 28px;
+  font-weight: bold;
+  color: #9ca3af;
+}
+
+/* =========================================
+   PREVIEW
+========================================= */
+
+.preview-card {
+  background: #f8fafc;
+}
+
+.preview-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.preview-box {
+  min-width: 180px;
+  padding: 16px;
+  background: white;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.preview-box strong {
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.preview-box span {
+  color: #6b7280;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.preview-arrow {
+  font-size: 24px;
+  color: #2563eb;
+}
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.pipeline-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.reset-btn,
+.create-pipeline-btn,
+.delete-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.reset-btn {
+  background: white;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.reset-btn:hover {
+  background: #f3f4f6;
+}
+
+.create-pipeline-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.create-pipeline-btn:hover {
+  background: #1d4ed8;
+}
+
+.create-pipeline-btn:disabled,
+.reset-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   EXISTING PIPELINES
+========================================= */
+
+.pipeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pipeline-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.pipeline-list-item h3 {
+  margin: 0 0 5px;
+  font-size: 16px;
+  color: #111827;
+}
+
+.pipeline-list-item p {
+  margin: 0 0 10px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.pipeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pipeline-meta span {
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+.delete-btn {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.delete-btn:hover {
+  background: #fecaca;
+}
+
+.empty-state {
+  padding: 30px;
+  text-align: center;
+  color: #6b7280;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .pipelines-page {
+    padding: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pipeline-flow {
+    flex-direction: column;
+  }
+
+  .flow-node {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  .flow-arrow {
+    transform: rotate(90deg);
+  }
+
+  .preview-flow {
+    flex-direction: column;
+  }
+
+  .preview-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .preview-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 600px) {
+
+  .pipelines-page {
+    padding: 15px;
+  }
+
+  .pipeline-page-header h1 {
+    font-size: 24px;
+  }
+
+  .pipeline-card {
+    padding: 18px;
+  }
+
+  .pipeline-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pipeline-actions {
+    flex-direction: column;
+  }
+
+  .reset-btn,
+  .create-pipeline-btn {
+    width: 100%;
+  }
+}
+/* ==========================================
+   PIPELINE BUTTONS
+========================================== */
+
+.pipeline-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+/* ==========================================
+   RUN PIPELINE BUTTON
+========================================== */
+
+.run-pipeline-btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #4f46e5;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.run-pipeline-btn:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+
+/* ==========================================
+   DELETE BUTTON
+========================================== */
+
+.delete-btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  background: #dc2626;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+
+/* ==========================================
+   RESPONSIVE PIPELINE BUTTONS
+========================================== */
+
+@media (max-width: 700px) {
+
+  .pipeline-buttons {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .run-pipeline-btn,
+  .delete-btn {
+    flex: 1;
+  }
+
+}

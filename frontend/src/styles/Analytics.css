@@ -1,0 +1,65 @@
+.analytics-page {
+  padding: 35px;
+  min-height: 100vh;
+  background: #eef5fc;
+}
+
+.analytics-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.analytics-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.analytics-icon {
+  font-size: 35px;
+  color: #2864e8;
+}
+
+.analytics-card h2 {
+  color: #163d82;
+  font-size: 28px;
+}
+
+.analytics-card p {
+  color: #667085;
+}
+
+.analytics-section {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.performance-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.performance-bar {
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.performance-bar div {
+  height: 100%;
+  background: #2864e8;
+}
+
+@media (max-width: 900px) {
+  .analytics-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,41 @@
+firstName,lastName,email,age,city
+Siddhant,Tambe,siddhant_mail@test.com,21,Mumbai
+Rahul,Patil,rahul_mail@test.com,22,Pune
+Amit,Sharma,amit_mail@test.com,20,Nashik
+Priya,Deshmukh,priya_mail@test.com,23,Thane
+Neha,Joshi,neha_mail@test.com,21,Mumbai
+Rohan,Kulkarni,rohan_mail@test.com,24,Nagpur
+Sneha,Sawant,sneha_mail@test.com,22,Kolhapur
+Aditya,Shinde,aditya_mail@test.com,25,Navi Mumbai
+Anjali,Chavan,anjali_mail@test.com,20,Aurangabad
+Vikas,More,vikas_mail@test.com,26,Solapur
+Pooja,Gaikwad,pooja_mail@test.com,23,Mumbai
+Kunal,Pawar,kunal_mail@test.com,21,Pune
+Tanvi,Rane,tanvi_mail@test.com,22,Thane
+Omkar,Bhosale,omkar_mail@test.com,24,Satara
+Divya,Mane,divya_mail@test.com,20,Nashik
+Pratik,Jadhav,pratik_mail@test.com,25,Mumbai
+Meera,Kale,meera_mail@test.com,23,Pune
+Swapnil,Salunkhe,swapnil_mail@test.com,22,Sangli
+Sayali,Kadam,sayali_mail@test.com,21,Thane
+Akshay,Ghate,akshay_mail@test.com,26,Nagpur
+Rutuja,Bapat,rutuja_mail@test.com,24,Kolhapur
+Gaurav,Mohite,gaurav_mail@test.com,22,Navi Mumbai
+Deepak,Verma,deepak_mail@test.com,25,Mumbai
+Kavita,Sutar,kavita_mail@test.com,21,Pune
+Harsh,Ingle,harsh_mail@test.com,20,Amravati
+Shraddha,Gholap,shraddha_mail@test.com,23,Nashik
+Nikhil,Gokhale,nikhil_mail@test.com,24,Thane
+Pranali,Kharat,pranali_mail@test.com,22,Solapur
+Ajay,Dhumal,ajay_mail@test.com,26,Aurangabad
+Sakshi,Wagh,sakshi_mail@test.com,21,Mumbai
+Mayur,Gore,mayur_mail@test.com,23,Pune
+Aishwarya,Nalawade,aishwarya_mail@test.com,22,Satara
+Sanket,Thorat,sanket_mail@test.com,25,Navi Mumbai
+Trupti,Gade,trupti_mail@test.com,20,Thane
+Vaibhav,Surve,vaibhav_mail@test.com,24,Kolhapur
+Aniket,Zende,aniket_mail@test.com,22,Sangli
+Mrunal,Datar,mrunal_mail@test.com,23,Mumbai
+Tejas,Shelar,tejas_mail@test.com,21,Pune
+Kalyani,Chitnis,kalyani_mail@test.com,25,Nashik
+Siddhesh,Dumbre,siddhesh_mail@test.com,24,Thane

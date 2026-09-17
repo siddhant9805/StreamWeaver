@@ -1,0 +1,98 @@
+.settings-page {
+  padding: 35px;
+  min-height: 100vh;
+  background: #eef5fc;
+}
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.settings-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.settings-card h2 {
+  color: #163d82;
+  margin-top: 0;
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.setting-row h3 {
+  margin-bottom: 5px;
+}
+
+.setting-row p {
+  color: #667085;
+  margin: 0;
+}
+
+.switch {
+  position: relative;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #d0d5dd;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 3px;
+  top: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background: #2864e8;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.account-info span {
+  color: #667085;
+}
+
+.save-settings {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #2864e8;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+1)Prerequisites and Environment Setup
+	Ensure Node.js and MongoDB are installed and running locally on your system. Verify that the MongoDB background service is active by executing 
+		Get-Service -	Name "*mongo*"   in PowerShell.
+
+2)Project Directory Navigation
+	Open your terminal (PowerShell or VS Code terminal) and navigate to the integrated project root directory:
+		cd C:\Users\Acer\Downloads\StreamWeaver\StreamWeaver-Project-Integrated
+
+3)Launching Application Servers
+	Start both the backend API server and frontend development server concurrently from the root directory with a single command:
+		npm run dev
+	Confirm from the terminal output that the backend is listening on port 4000 and the Vite frontend is running on port 5173.
+
+4)Accessing the Web Interface
+	Open your web browser and load the frontend application URL:
+		http://localhost:5173
+	If prompted, click Register to create a new user account, then log in with your credentials to access the dashboard.
+
+5)Uploading Your Dataset
+	Navigate to the Upload Dataset page via the left-hand navigation sidebar. 
+	Upload your target CSV file (such as etl-test.csv or large-test.csv). 
+	Verify that the virtualized preview grid loads successfully, displaying your headers and initial rows alongside a generated Job ID.
+
+6)Configuring the Pipeline
+	Go to the Pipelines page from the sidebar. 
+	Provide a pipeline name (e.g., Uppercase Name Pipeline). 
+	Select your uploaded dataset (etl-test.csv) from the dataset dropdown menu. 
+	Under Visual Column Mapping, map your source CSV columns to destination fields (e.g., source firstName to destination firstName). 
+	Enter a transformation expression in the transform box, such as:
+		value => value ? value.trim().toUpperCase() : ''    ..(use when you want uppercase)
+
+7)Executing and Monitoring the Pipeline
+	Click the Run Pipeline button to kick off stream processing and batch writes (bulkWrite). 
+	Switch to the History page in the sidebar to monitor live progress counters (Rows Processed, Rows Inserted) and ensure the final status changes to SUCCESS.
+
+8)Verifying Results in MongoDB Compass
+	Open MongoDB Compass and connect to your local instance (mongodb://127.0.0.1:27017). 
+	Expand the streamweaver database and check the dynamically created etl_run_... collection to verify that records have been successfully inserted with the 	correct uppercase transformations applied. 
+	Or you can check pipeline created in here: C:\Users\Acer\Downloads\StreamWeaver\StreamWeaver-Project-Integrated\backend\uploads
+	

@@ -1,0 +1,33 @@
+{
+  "name": "@streamweaver/backend",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test",
+    "audit:memory": "node scripts/memory-audit.js",
+    "db:test": "node scripts/testConnection.js",
+    "db:seed": "node scripts/seed.js",
+    "db:seed:clean": "node scripts/seed.js --clean",
+    "db:test:pipeline": "node scripts/testPipelineConfig.js",
+    "db:test:runs": "node scripts/testPipelineRun.js",
+    "test:integration": "node scripts/testIntegrationApi.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "busboy": "^1.6.0",
+    "cors": "^2.8.5",
+    "csv-parse": "^5.5.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "isolated-vm": "^5.0.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
